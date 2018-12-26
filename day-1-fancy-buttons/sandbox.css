@@ -1,5 +1,96 @@
 /* ========================================
 
-    CODE YOUR STYLES BELOW!
+    Facebook Buttons
 
    ====================================== */
+
+   .facebook-style-btn{
+       padding: 6px 12px;
+       font-size: 0.9rem;
+       border-radius: 2px;
+   }
+   .facebook-style-dark{
+       color: white;
+       background-color: #5875ad;
+       border: 1px solid #5875ad;
+    }
+    .facebook-style-dark:hover{
+        background-color: #4267b2;
+        text-shadow: 0px 1px 0px #2b4b8b;
+        border: 1px solid #6889ca;
+   }
+   .facebook-style-light{
+       color: rgb(54, 54, 54);
+       background-color: #f5f5f5;
+       border: 1px solid rgb(201, 201, 201);
+       outline: none;
+    }
+    .facebook-style-light:hover{
+        background-color:#e4e4e4;
+   }
+
+   /* ========================================
+
+    3d Button - 1
+
+   ====================================== */
+
+   .btn-3d-1{
+       position: relative;
+       background-color: orangered;
+       color: white;
+       font-size: 2rem;
+       border: none;
+       outline: none;
+       box-shadow: -6px 6px rgb(153, 41, 0);
+   }
+   
+    .btn-3d-1:hover{
+          background-color: rgb(240, 64, 0);
+    }
+
+   .btn-3d-1:active{
+    background-color:rgb(219, 58, 0);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px rgb(153,41,0)
+   }
+
+   .btn-3d-1::before{
+       content: "";
+       position: absolute;
+       height: 0;
+       width: 0; 
+       
+       border: solid 6px transparent;
+       border-right: solid 6px rgb(153, 41, 0); 
+       border-left-width: 0;
+       top: 0px;
+       left: -6px;
+   }
+
+
+
+   .btn-3d-1:active::before{
+    border: solid 3px transparent;
+    border-right: solid 3px rgb(153, 41, 0);
+}
+
+
+   .btn-3d-1::after{
+       content: "";
+       position: absolute;
+       height: 0;
+       width: 0;
+
+       border: solid 6px transparent;
+       border-top: solid 6px rgb(153, 41, 0);
+       border-bottom-width: 0;
+       bottom:-6px;
+       right: 0px; 
+   }
+
+   .btn-3d-1:active::after{
+    border: solid 3px transparent;
+    border-top: solid 3px rgb(153,41,0);     
+}
