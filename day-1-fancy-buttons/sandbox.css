@@ -43,6 +43,7 @@
        border: none;
        outline: none;
        box-shadow: -6px 6px rgb(153, 41, 0);
+       padding: 10px 15px;
    }
    
     .btn-3d-1:hover{
@@ -94,3 +95,45 @@
     border: solid 3px transparent;
     border-top: solid 3px rgb(153,41,0);     
 }
+
+/* ========================================
+
+    3d Button -2
+
+   ====================================== */
+
+   .btn-3d-2{
+       position: relative;
+       border-radius: 50%;
+       height: 150px;
+       width: 150px;
+       color: white;
+       font-size: 1.5rem;
+       outline: none;
+       border: none;
+       background-image: radial-gradient(yellow,rgb(180, 180, 0));
+       box-shadow: inset 0px -1px rgb(255, 230, 0),
+                    0px 2px 0 hsl(54,100%,20%),
+                    0px 3px 0 hsl(54,100%,18%),
+                    0px 4px 0 hsl(54,100%,16%),
+                    0px 5px 0 hsl(54,100%,14%),                    
+                    0px 6px 0 hsl(54,100%,12%),               
+                    0px 7px 0 hsl(54,100%,10%),               
+                    0px 8px 0 hsl(54,100%,8%),               
+                    0px 9px 0 hsl(54,100%,6%);
+   }
+
+   .btn-3d-2:active{
+       top: 5px;
+       box-shadow: inset 0px -1px rgb(255, 230, 0),
+                    0px 2px 0 hsl(54,100%,20%),
+                    0px 3px 0 hsl(54,100%,18%),
+                    0px 4px 0 hsl(54,100%,16%),
+                    0px 5px 0 hsl(54,100%,14%);
+   }
+
+   /* ========================================
+
+    Gradient Button - 1
+
+   ====================================== */
