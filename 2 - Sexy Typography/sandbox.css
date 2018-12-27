@@ -1,0 +1,29 @@
+/* ========================================
+
+    Shadow effect
+
+   ====================================== */
+   .shadow-typo{
+       color: aqua;
+       text-shadow: 1px 1px #fff, 4px 4px rgba(0, 0, 0, 0.1);
+       font-size: 3rem;
+       text-transform: uppercase;
+   }
+
+/* ========================================
+
+    Shadow effect
+
+   ====================================== */
+   .threedee-typo{
+       color: #f2395a;
+       text-transform: uppercase;
+       font-size: 4rem;
+       transform: skew(-5deg,-5deg) rotate(5deg);
+       transform-origin: center center;
+       text-shadow: 1px 1px #991f36,
+                    2px 2px #991f36,
+                    3px 3px #991f36,
+                    4px 4px #5e1422,
+                    5px 5px #5e1422;
+   }
