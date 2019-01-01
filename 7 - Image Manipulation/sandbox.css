@@ -1,0 +1,40 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+img{
+    transition: all 1s;
+}
+
+   .grayscale{
+    filter: grayscale(100%);
+}
+
+.grayscale:hover{
+    filter: grayscale(0%);
+}
+
+.blur{
+    filter: blur(4px);
+}
+
+.blur:hover{
+    filter: blur(0px);
+}
+
+.invert{
+    filter: invert(100%);
+}
+
+.invert:hover{
+    filter: invert(0%);
+}
+
+.sepia{
+    filter: sepia(100%);
+}
+
+.sepia:hover{
+    filter: sepia(0%);
+}
