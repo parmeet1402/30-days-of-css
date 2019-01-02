@@ -1,0 +1,117 @@
+/* ========================================
+
+    MODERN LAYOUT => 1
+
+   ====================================== */
+.layout1 article{
+    width: 58%;
+    float: left;
+}
+
+.layout1 aside{
+    width: 40%;
+    float: right;
+}
+
+.layout1 footer{
+    clear: both;
+}
+
+
+   /* ========================================
+
+    MODERN LAYOUT => 2
+
+   ====================================== */
+.layout2 header .logo{
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+.layout2 header nav{
+    width: 78%;
+    float: right;
+    margin: 0;
+}
+/* clear fix to prevent collapse of parent container */
+.layout2 header::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout2 article{
+    width: 40%;
+    margin-left: 2%;
+    float: left;
+}
+
+.layout2 aside.sidenav{
+    width: 23%;
+    float: left;
+}
+
+
+.layout2 aside.sidebar{
+    width: 33%;
+    float: right;
+}
+
+.layout2 footer{
+    clear: both;
+}
+
+
+   /* ========================================
+
+    MODERN LAYOUT => 3
+
+   ====================================== */
+
+   .layout3 header .logo{
+       width: 20%;
+       float: right;
+       margin: 0;
+   }
+
+   .layout3 header nav{
+       width: 78%;
+       float: left;
+       margin: 0;
+   }
+
+   .layout3 header::after{
+       display: table;
+       content: "";
+       clear: both;
+   }
+
+   .layout3 .articles article{
+       width: 31%;
+       float: left;
+       margin: 1%;
+   }
+
+   .layout3 .articles::after{
+       display: table;
+       content:"";
+       clear: both;
+   } 
+
+   /* BASIC MEDIA QUERY */
+   .layout1 article,
+   .layout1 aside,
+   .layout2 header .logo,
+   .layout2 header nav,
+   .layout2 article,
+   .layout2 aside.sidenav,
+   .layout2 asude.sidebar,
+   .layout3 article,
+   .layout3 aside,
+   .layout3 header .logo,
+   .layout3 header nav{
+       float:  none;
+        width: 100%;
+        margin: 0 0 2%;
+}
