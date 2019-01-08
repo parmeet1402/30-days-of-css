@@ -31,8 +31,6 @@
     background-color: rgba(0,0,0,0.8);
     color: white;
     content: attr(title);
-
-    
 }
 
 .tooltip::after{
@@ -44,7 +42,7 @@
     border: 5px solid transparent;
     content: "";
 }
-
+/* For Top Button */
 .tooltip.top::before{
     bottom: calc(100% + 5px);
     left: 50%;
@@ -56,4 +54,48 @@
     border-top-color: rgba(0,0,0,0.8);
     transform: translateX(-50%);
     border-bottom-width: 0;
+}
+
+/* For Bottom Button */
+.tooltip.bottom::before{
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tooltip.bottom::after{
+    top: 100%;
+    left: 50%;
+    border-bottom-color: rgba(0,0,0,0.8);
+    transform: translateX(-50%);
+    border-top-width: 0;
+}
+
+/* For Left Button */
+
+.tooltip.left::before{
+    right: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tooltip.left::after{
+    top: 50%;
+    right: 100%;
+    border-left-color: rgba(0,0,0,0.8);
+    transform: translateY(-50%);
+    border-right-width: 0;
+}
+
+/* For Right Button */
+
+.tooltip.right::before{
+    left: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tooltip.right::after{
+    top: 50%;
+    left: 100%;
+    border-right-color: rgba(0,0,0,0.8);
+    transform: translateY(-50%);
+    border-left-width: 0;
 }
