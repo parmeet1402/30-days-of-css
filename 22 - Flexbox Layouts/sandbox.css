@@ -1,0 +1,76 @@
+/* ========================================
+
+    LAYOUT-1
+
+   ====================================== */
+.layout1 main{
+    display: flex;
+    flex-direction: row; 
+}
+
+.layout1 article{
+    flex: 1 58%;
+    margin-right: 2%;
+}
+
+/* ========================================
+
+    LAYOUT-2
+
+   ====================================== */
+
+.layout2 header{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 .logo{
+    flex: 1;
+    margin-right: 2%;
+}
+
+.layout2 nav{
+    flex: 5;
+}
+
+.layout2 main{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 aside{
+    flex: 1 10%;
+}
+
+.layout2 article{
+    flex: 6;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+/* ========================================
+
+    LAYOUT-3
+
+   ====================================== */
+   .layout3 header{
+       display: flex;
+       flex-direction: row;
+   }
+   .layout3 .logo{
+       flex: 1;
+       margin-right: 2%;
+   }
+   .layout3 nav{
+       flex: 5;
+   }
+   .layout3 .articles{
+       display: flex;
+       flex-direction: row;
+   }
+   .layout3 .articles article{
+       flex: 1;
+   }
+   .layout3 .articles article:not(:last-child){
+       margin-right: 2%;
+   }
